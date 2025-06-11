@@ -3,7 +3,7 @@ FROM openjdk:17.0.2-jdk AS build
 WORKDIR /app
 
 # Copy Gradle wrapper and config files
-COPY gradlew build.gradle.kts settings.gradle ./
+COPY gradlew build.gradle.kts settings.gradle.kts ./
 COPY gradle ./gradle
 
 # Copy source
