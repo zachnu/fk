@@ -1,5 +1,5 @@
 # Use a base image with a Java Runtime Environment (JRE)
-FROM openjdk:17-jre-slim
+FROM openjdk:17.0.2-jdk
 
 # Expose the port your Spring Boot application listens on (default is 8080)
 EXPOSE 8080
