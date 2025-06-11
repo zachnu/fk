@@ -13,7 +13,7 @@ COPY src ./src
 RUN chmod +x gradlew && ./gradlew bootJar --no-daemon
 
 # --- Run stage ---
-FROM eclipse-temurin:17-jre-alpine
+FROM openjdk:17.0.2-jdk
 WORKDIR /app
 
 # Copy the built JAR
